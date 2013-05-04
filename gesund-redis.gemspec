@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Gesund::Redis::VERSION
   spec.authors       = ["Evgeny Zislis"]
   spec.email         = ["evgeny@devops.co.il"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Plugin for Gesund health checker to check Redis health}
+  spec.summary       = %q{Redis health checks for Gesund}
   spec.homepage      = ""
   spec.license       = "MIT"
 
