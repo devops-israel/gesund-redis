@@ -1,3 +1,4 @@
+require "gesund"
 require "gesund/redis/version"
 require "gesund/checks/redis_connection"
 
