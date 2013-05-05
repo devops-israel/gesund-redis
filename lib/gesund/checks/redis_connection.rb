@@ -5,11 +5,13 @@ module Gesund::Checks
     include Gesund::Check
     def initialize(options)
       begin
-        self.success = (::Redis.new(options).ping == "PONG")
-        self.message = "Redis PING = PONG"
+        if ::Redis.new(options).ping == "PONG"
+          self.pass "Redis PING = PONG"
+        else
+          self.fail "Redis PING != PONG"
+        end
       rescue => e
-        self.message = "#{e.class}: #{e.message}"
-        self.success = false
+        self.fail "#{e.class}: #{e.message}"
       end
     end
   end

@@ -2,14 +2,14 @@ PATH
   remote: .
   specs:
     gesund-redis (0.0.2)
-      gesund
+      gesund (~> 0.0.3)
       redis
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.4)
-    gesund (0.0.1)
+    gesund (0.0.3)
       rack
       thor
     multi_json (1.7.2)
