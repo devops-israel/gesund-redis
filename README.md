@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devops-israel/gesund-redis.png)](https://travis-ci.org/devops-israel/gesund-redis)
+
 # Gesund::Redis
 
 TODO: Write a gem description
